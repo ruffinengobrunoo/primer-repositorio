@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 <body>
     <header>
 <!-- menu responsive -->
-        <nav>
+        <nav id="desp">
             <ul>
                 <li><i class="fa-solid fa-list" style="color: #400101;"></i>
                     <ul class="lista">
@@ -22,7 +22,7 @@
                         Usuario
                     </a></li>
                     <li  id="mue-cat">Muebles
-                        <ul class="lista">
+                        <ul class="lista" id="mueb-desp">
                             <li><a href="#relojes">Relojes</a></li>
                             <li><a href="#lamparas">Lámparas</a></li>
                             <li><a href="#sillones">Sillones</a></li>
@@ -34,10 +34,11 @@
             </ul>
         </nav>
 <!-- menu compu -->
+
         <nav id="compu">
             <ul>
-                <li class="lista"><a href="">Categorías</a>
-                    <ul>
+                <li id="menu-compu">Categorías
+                    <ul id="ul-compu" class="lista">
                         <li><a href="#relojes">Relojes</a></li>
                         <li><a href="#lamparas">Lámparas</a></li>
                         <li><a href="#sillones">Sillones</a></li>
@@ -46,25 +47,23 @@
                 </li>
             </ul>
         </nav>
+
         <p id="top-txt">Muebles</p>
 
-        <nav>
-            <ul>
-                <li>
+            <div class="bttns">
                     <i class="fa-solid fa-cart-shopping" style="color: #400101;"></i>
-                    <ul class="lista" id="carrito">
-                        <li>Carrito</li>
-                     </ul>
-                </li>
-            </ul>
-        </nav>
-        
+                    <i class="fa-solid fa-circle-user" id="user-icon" style="color: #400101;"></i> <br />
+                
+            </div>
 
+                    
     </header>
 
     <div class="header">
-        <img src="fotos/header.jpg" alt="header" id="foto-1">
-        <p id="texto">La tranquilidad de vivir bien.</p>
+        <div class="foto">
+        <img src="fotos/header.jpg" alt="header" id="foto-1"></div>
+        <div class="texto-header">
+        <h2 class="texto">La tranquilidad de vivir bien. </h2></div>
     </div>
 
     <h2 id="prod-text">
@@ -76,12 +75,12 @@
         <div class="filtros">
             <nav>
                 <ul>
-                    <li><p>Filtros <i class="fa-solid fa-filter" style="color: #400101;"></i></p>
-            <ul class="lista" id="filtros">
-                <li>opción</li>
-                <li>opción</li>
-                <li>opción</li>
-                <li>opción</li>
+                    <li>Filtros <i class="fa-solid fa-filter" style="color: #400101;"></i>
+                    <ul class="lista" id="filtros">
+                <li class="list-text">opción</li>
+                <li class="list-text">opción</li>
+                <li class="list-text">opción</li>
+                <li class="list-text">opción</li>
             </ul></li>
                 </ul>
             </nav>
@@ -89,12 +88,12 @@
 
         <div class="filtros">
             <nav><ul><li>
-            <p>Ver <i class="fa-solid fa-arrows-up-down" style="color: #400101;"></i></p>
-            <ul class="lista" id="filtros">
-                <li>opción</li>
-                <li>opción</li>
-                <li>opción</li>
-                <li>opción</li>
+            Ver <i class="fa-solid fa-arrows-up-down" style="color: #400101;"></i>
+            <ul class="lista" id="filtros2">
+                <li class="list-text">opción</li>
+                <li class="list-text">opción</li>
+                <li class="list-text">opción</li>
+                <li class="list-text">opción</li>
             </ul>
         </li></ul></nav>
         </div>
@@ -161,26 +160,30 @@
         
             <div class="ej">
                 <a href="">
-                    <img src="" alt="">
-                    <p class="textin"></p>
+                    <img class="foto-prod" src="fotos/sillon.jpg" alt="">
+                    <p class="textin">Producto <br /> $0000</p>
+                </a>
                 </a>
             </div>
             <div class="ej">
                 <a href="">
-                    <img src="" alt="">
-                    <p class="textin"></p>
+                    <img class="foto-prod" src="fotos/sillon.jpg" alt="">
+                    <p class="textin">Producto <br /> $0000</p>
+                </a>
                 </a>
             </div>
             <div class="ej">
                 <a href="">
-                    <img src="" alt="">
-                    <p class="textin"></p>
+                    <img class="foto-prod" src="fotos/sillon.jpg" alt="">
+                    <p class="textin">Producto <br /> $0000</p>
+                </a>
                 </a>
             </div>
             <div class="ej" id="cuatro">
                 <a href="">
-                    <img src="" alt="">
-                    <p class="textin"></p>
+                    <img class="foto-prod" src="fotos/sillon.jpg" alt="">
+                    <p class="textin">Producto <br /> $0000</p>
+                </a>
                 </a>
             </div>
     </div>
@@ -189,26 +192,30 @@
         
             <div class="ej">
                 <a href="">
-                    <img src="" alt="">
-                    <p class="textin"></p>
+                    <img class="foto-prod" src="fotos/escritorio.jpg" alt="">
+                    <p class="textin">Producto <br /> $0000</p>
+                </a>
                 </a>
             </div>
             <div class="ej">
                 <a href="">
-                    <img src="" alt="">
-                    <p class="textin"></p>
+                    <img class="foto-prod" src="fotos/escritorio.jpg" alt="">
+                    <p class="textin">Producto <br /> $0000</p>
+                </a>
                 </a>
             </div>
             <div class="ej">
                 <a href="">
-                    <img src="" alt="">
-                    <p class="textin"></p>
+                    <img class="foto-prod" src="fotos/escritorio.jpg" alt="">
+                    <p class="textin">Producto <br /> $0000</p>
+                </a>
                 </a>
             </div>
             <div class="ej" id="cuatro">
                 <a href="">
-                    <img src="" alt="">
-                    <p class="textin"></p>
+                    <img class="foto-prod" src="fotos/escritorio.jpg" alt="">
+                    <p class="textin">Producto <br /> $0000</p>
+                </a>
                 </a>
             </div>
     </div>
